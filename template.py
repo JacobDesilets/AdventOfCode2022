@@ -4,17 +4,16 @@ from pathlib import Path
 def main():
     infile = Path(__file__).with_name('dayn.txt')
     with open(infile) as f:
-        part1(f)
+        lines = f.readlines()
+        part1(lines)
+        part2(lines)
 
-    with open(infile) as f:
-        part2(f)
 
-
-def part1(f):
+def part1(lines):
     pass
 
 
-def part2(f):
+def part2(lines):
     pass
 
 
